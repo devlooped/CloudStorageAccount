@@ -1,7 +1,12 @@
-# Devlooped.CloudStorageAccount
+![Icon](https://raw.githubusercontent.com/devlooped/CloudStorageAccount/main/assets/img/icon-32.png) CloudStorageAccount
+============
+
+[![Version](https://img.shields.io/nuget/v/Devlooped.CloudStorageAccount.svg?color=royalblue)](https://www.nuget.org/packages/Devlooped.CloudStorageAccount) 
+[![Downloads](https://img.shields.io/nuget/dt/Devlooped.CloudStorageAccount.svg?color=green)](https://www.nuget.org/packages/Devlooped.CloudStorageAccount) 
+[![License](https://img.shields.io/github/license/devlooped/CloudStorageAccount.svg?color=blue)](https://github.com/devlooped/CloudStorageAccount/blob/main/license.txt) 
+[![Build](https://github.com/devlooped/CloudStorageAccount/workflows/build/badge.svg?branch=main)](https://github.com/devlooped/CloudStorageAccount/actions)
 
 CloudStorageAccount for Azure Storage v12+.
-
 
 
 ## Dogfooding
