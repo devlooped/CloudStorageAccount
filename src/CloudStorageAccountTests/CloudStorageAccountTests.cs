@@ -7,12 +7,11 @@ public class CloudStorageAccountTests
     const string AccountName = "foo";
     readonly string AccountKey = Convert.ToBase64String(new byte[] { 0, 1, 2 });
 
-
     [Fact]
     public void StorageCredentialsAnonymous()
     {
         var cred = new StorageCredentials();
-
+        
         Assert.Null(cred.AccountName);
         Assert.Null(cred.AccountKey);
         Assert.Null(cred.Signature);

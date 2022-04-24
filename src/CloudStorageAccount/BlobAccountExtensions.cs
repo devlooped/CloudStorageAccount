@@ -14,7 +14,14 @@ public static class BlobAccountExtensions
     /// <summary>
     /// Creates a Blob service client from the given account.
     /// </summary>
+    [EditorBrowsable(EditorBrowsableState.Never)]
     public static BlobServiceClient CreateCloudBlobClient(this CloudStorageAccount account)
+        => CreateBlobClient(account);
+
+    /// <summary>
+    /// Creates a Blob service client from the given account.
+    /// </summary>
+    public static BlobServiceClient CreateBlobClient(this CloudStorageAccount account)
     {
         if (account.BlobEndpoint == null)
             throw new InvalidOperationException("No blob endpoint configured.");

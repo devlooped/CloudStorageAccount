@@ -14,7 +14,14 @@ public static class TableAccountExtensions
     /// <summary>
     /// Creates a Table service client from the given account.
     /// </summary>
+    [EditorBrowsable(EditorBrowsableState.Never)]
     public static TableServiceClient CreateCloudTableClient(this CloudStorageAccount account)
+        => CreateTableClient(account);
+
+    /// <summary>
+    /// Creates a Table service client from the given account.
+    /// </summary>
+    public static TableServiceClient CreateTableClient(this CloudStorageAccount account)
     {
         if (account.TableEndpoint == null)
             throw new InvalidOperationException("No table endpoint configured.");

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using Azure.Core;
 
 namespace Devlooped;
@@ -69,15 +70,36 @@ public class StorageCredentials
     /// clients.
     /// </summary>
     /// <param name="accountKey">A Storage Account access key.</param>
-    public void UpdateKey(string accountKey) => AccountKey = IsSharedKey ? accountKey
+    public void SetAccountKey(string accountKey) => AccountKey = IsSharedKey ? accountKey
         : throw new InvalidOperationException("Cannot update Shared Access Signature unless Sas credentials are used.");
+
+    /// <summary>
+    /// Updates the shared access signature. This is intended to be used when you've
+    /// regenerated your shared access signature and want to update long lived clients.
+    /// </summary>
+    /// <param name="signature">Shared access signature to authenticate the service against.</param>
+    /// <exception cref="ArgumentNullException">Thrown when the signature is null.</exception>
+    /// <exception cref="ArgumentException">Thrown when the signature is empty.</exception>
+    /// <exception cref="InvalidOperationException">Throws when the credentials are not </exception>
+    public void Update(string signature) => Signature = IsSAS ? signature
+        : throw new InvalidOperationException("Cannot update key unless shared access signature credentials are used.");
 
     /// <summary>
     /// Updates the shared access signature (SAS) token value for storage credentials created with a shared access signature.
     /// </summary>
     /// <param name="sasToken">A string that specifies the SAS token value to update.</param>
-    public void UpdateSASToken(string sasToken) => Signature = IsSAS ? sasToken
-        : throw new InvalidOperationException("Cannot update key unless Account Key credentials are used.");
+    [EditorBrowsable(EditorBrowsableState.Never)]
+    public void UpdateSASToken(string sasToken) => Update(sasToken);
+
+    /// <summary>
+    /// Update the Storage Account's access key. This intended to be used when you've
+    /// regenerated your Storage Account's access keys and want to update long lived
+    /// clients.
+    /// </summary>
+    /// <param name="accountKey">A Storage Account access key.</param>
+    [EditorBrowsable(EditorBrowsableState.Never)]
+    public void UpdateKey(string accountKey) => AccountKey = IsSharedKey ? accountKey
+        : throw new InvalidOperationException("Cannot update Shared Access Signature unless Sas credentials are used.");
 
     internal string ToString(bool exportSecrets)
     {
