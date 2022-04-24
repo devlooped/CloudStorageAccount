@@ -1,15 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <RootNamespace>Devlooped</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Devlooped.CloudStorageAccount</AssemblyName>
     <PackageId>Devlooped.CloudStorageAccount</PackageId>
     <Description>CloudStorageAccount for Azure Storage v12+</Description>
+    <PackageProjectUrl>https://clarius.org/CloudStorageAccount</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Azure.Storage.Blobs" Version="12.0.0" />
     <PackageReference Include="Azure.Storage.Queues" Version="12.0.0" />
     <PackageReference Include="Azure.Data.Tables" Version="12.0.0" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="all" />
   </ItemGroup>
 
 </Project>
