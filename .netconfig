@@ -124,8 +124,8 @@
 	weak
 [file "src/Directory.Build.targets"]
 	url = https://github.com/devlooped/oss/blob/main/src/Directory.Build.targets
-	sha = 4f57ffe1d48addf16641934e7b1e47ef70204e6e
-	etag = 87c4dff4b44072c6825b451957af6d920616d77c50152a7d99719151c3d24639
+	sha = 024f73321ffe4e927151ff94666c52c2d425139a
+	etag = 816dff7cb821a885da46ad200f9b8bea3438d74da3172bc43716d5670abaee6c
 	weak
 [file "src/kzu.snk"]
 	url = https://github.com/devlooped/oss/blob/main/src/kzu.snk
