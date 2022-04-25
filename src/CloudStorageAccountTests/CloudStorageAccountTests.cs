@@ -11,7 +11,7 @@ public class CloudStorageAccountTests
     public void StorageCredentialsAnonymous()
     {
         var cred = new StorageCredentials();
-        
+
         Assert.Null(cred.AccountName);
         Assert.Null(cred.AccountKey);
         Assert.Null(cred.Signature);
