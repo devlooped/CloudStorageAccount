@@ -16,12 +16,12 @@ public static class QueueAccountExtensions
     /// </summary>
     [EditorBrowsable(EditorBrowsableState.Never)]
     public static QueueServiceClient CreateCloudQueueClient(this CloudStorageAccount account)
-        => CreateQueueClient(account);
+        => CreateQueueServiceClient(account);
 
     /// <summary>
     /// Creates a Queue service client from the given account.
     /// </summary>
-    public static QueueServiceClient CreateQueueClient(this CloudStorageAccount account)
+    public static QueueServiceClient CreateQueueServiceClient(this CloudStorageAccount account)
     {
         if (account.QueueEndpoint == null)
             throw new InvalidOperationException("No queue endpoint configured.");
