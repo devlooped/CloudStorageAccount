@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.0.0](https://github.com/devlooped/CloudStorageAccount/tree/v1.0.0) (2022-04-25)
+
+[Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v0.2.0-alpha...v1.0.0)
+
 ## [v0.2.0-alpha](https://github.com/devlooped/CloudStorageAccount/tree/v0.2.0-alpha) (2022-04-24)
 
 [Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/ad23b64f489fd7a861ff59ee2e2fb697a1711519...v0.2.0-alpha)
