@@ -9,7 +9,7 @@ namespace Devlooped;
 /// Provides the <see cref="CreateCloudQueueClient(CloudStorageAccount)"/> extension method.
 /// </summary>
 [EditorBrowsable(EditorBrowsableState.Never)]
-public static class QueueAccountExtensions
+static partial class QueueAccountExtensions
 {
     /// <summary>
     /// Creates a Queue service client from the given account.

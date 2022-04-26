@@ -9,7 +9,7 @@ namespace Devlooped;
 /// Provides the <see cref="CreateCloudTableClient(CloudStorageAccount)"/> extension method.
 /// </summary>
 [EditorBrowsable(EditorBrowsableState.Never)]
-public static class TableAccountExtensions
+static partial class TableAccountExtensions
 {
     /// <summary>
     /// Creates a Table service client from the given account.

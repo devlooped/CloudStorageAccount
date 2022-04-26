@@ -3,10 +3,13 @@
   <PropertyGroup>
     <RootNamespace>Devlooped</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Devlooped.CloudStorageAccount</AssemblyName>
-    <PackageId>Devlooped.CloudStorageAccount</PackageId>
+    <AssemblyName>Devlooped.CloudStorageAccount.Source</AssemblyName>
+    <PackageId>Devlooped.CloudStorageAccount.Source</PackageId>
     <Description>CloudStorageAccount for Azure Storage v12+</Description>
     <PackageProjectUrl>https://clarius.org/CloudStorageAccount</PackageProjectUrl>
+    <PackBuildOutput>false</PackBuildOutput>
+    <PackCompile>true</PackCompile>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,7 +23,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <InternalsVisibleTo Include="CloudStorageAccountTests" />
+    <Compile Include="..\CloudStorageAccount\**\*.cs" Exclude="..\CloudStorageAccount\Visibility.cs;..\CloudStorageAccount\obj\**\*.cs;" />
+    <None Update="Devlooped.CloudStorageAccount.Source.targets" PackFolder="build" />
+    <None Update="readme.md">
+      <PackagePath>%(Filename)%(Extension)</PackagePath>
+    </None>
   </ItemGroup>
   
 </Project>
