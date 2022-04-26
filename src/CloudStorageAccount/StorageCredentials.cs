@@ -8,7 +8,7 @@ namespace Devlooped;
 /// Represents a set of credentials used to authenticate access 
 /// to a Microsoft Azure storage account.
 /// </summary>
-public class StorageCredentials
+partial class StorageCredentials
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="StorageCredentials"/> with 

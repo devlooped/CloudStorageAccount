@@ -11,7 +11,7 @@ namespace Devlooped;
 /// <summary>
 /// Represents a Microsoft Azure Storage account.
 /// </summary>
-public class CloudStorageAccount
+partial class CloudStorageAccount
 {
     /// <summary>
     /// The setting name for using the development storage.

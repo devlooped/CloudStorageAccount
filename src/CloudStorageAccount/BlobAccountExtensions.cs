@@ -9,7 +9,7 @@ namespace Devlooped;
 /// Provides the <see cref="CreateCloudBlobClient(CloudStorageAccount)"/> extension method.
 /// </summary>
 [EditorBrowsable(EditorBrowsableState.Never)]
-public static class BlobAccountExtensions
+static partial class BlobAccountExtensions
 {
     /// <summary>
     /// Creates a Blob service client from the given account.
