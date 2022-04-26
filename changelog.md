@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.0.1-beta](https://github.com/devlooped/CloudStorageAccount/tree/v1.0.1-beta) (2022-04-26)
+
+[Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v1.0.0...v1.0.1-beta)
+
+:twisted_rightwards_arrows: Merged:
+
+- Add readmes and source-only package [\#6](https://github.com/devlooped/CloudStorageAccount/pull/6) (@kzu)
+
 ## [v1.0.0](https://github.com/devlooped/CloudStorageAccount/tree/v1.0.0) (2022-04-25)
 
 [Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v0.2.0-alpha...v1.0.0)
