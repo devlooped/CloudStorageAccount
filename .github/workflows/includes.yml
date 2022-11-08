@@ -23,7 +23,7 @@ jobs:
           BOT_AUTHOR_SECRET: ${{ secrets.BOT_AUTHOR }}
 
       - name: +M▼ includes
-        uses: devlooped/actions-include@v4
+        uses: devlooped/actions-include@v1
 
       - name: ✍ pull request
         uses: peter-evans/create-pull-request@v3
