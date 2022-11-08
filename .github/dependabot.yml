@@ -6,6 +6,4 @@ updates:
 - package-ecosystem: nuget
   directory: /
   schedule:
-    interval: weekly
-  ignore:
-  - dependency-name: Azure.*
+    interval: daily
