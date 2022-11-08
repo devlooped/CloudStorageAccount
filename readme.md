@@ -8,6 +8,43 @@
 
 CloudStorageAccount for Azure Storage v12+.
 
+# Overview
+<!-- #Overview -->
+The new unified Azure Storage and Tables client libraries do away with the 
+[CloudStorageAccount](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.storage.cloudstorageaccount?view=azure-dotnet) 
+that was typically used. This makes migration a bit painful, as noted in:
+
+* [Azure.Data.Tables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/tables/Azure.Data.Tables/MigrationGuide.md) migration guide
+* [Azure.Storage.Blobs](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/storage/Azure.Storage.Blobs/AzureStorageNetMigrationV12.md) migration guide
+
+This package provides a (mostly) drop-in replacement, with source code brought (and updated) 
+from the [original location](https://github.com/Azure/azure-storage-net/blob/master/Lib/Common/CloudStorageAccount.cs).
+Just replace the old namespace `Microsoft.Azure.Storage` with `Devlooped` and you're mostly done.
+
+In addition to the legacy, backwards-compatible APIs so projects compile right away with this 
+package when upgrading to v12 client libraries, there are a few newer APIs that are more aligned 
+with the new APIs, such as:
+
+* CloudStorageAccount.CreateBlobServiceClient (extension method)
+* CloudStorageAccount.CreateQueueServiceClient (extension method)
+* CloudStorageAccount.CreateTableServiceClient (extension method)
+
+These make it more explicit that you're creating instances of the new service clients.
+
+## Usage
+
+```csharp
+var account = CloudStorageAccount.DevelopmentStorageAccount;
+
+var tableService = account.CreateTableServiceClient();
+// legacy invocation works too: account.CreateCloudTableClient();
+
+// Can also access the endpoints for each service:
+Console.WriteLine(account.BlobEndpoint);
+Console.WriteLine(account.QueueEndpoint);
+Console.WriteLine(account.TableEndpoint);
+```
+<!-- #Overview -->
 
 ## Dogfooding
 
@@ -24,24 +61,4 @@ The versioning scheme for packages is:
 - Branch builds: *42.42.42-*`[BRANCH]`.`[COMMITS]`
 
 
-<!-- include docs/footer.md -->
-# Sponsors 
-
-<!-- sponsors.md -->
-[![Kirill Osenkov](https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/KirillOsenkov.png "Kirill Osenkov")](https://github.com/KirillOsenkov)
-[![C. Augusto Proiete](https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/augustoproiete.png "C. Augusto Proiete")](https://github.com/augustoproiete)
-[![SandRock](https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/sandrock.png "SandRock")](https://github.com/sandrock)
-[![Amazon Web Services](https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/aws.png "Amazon Web Services")](https://github.com/aws)
-[![Christian Findlay](https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/MelbourneDeveloper.png "Christian Findlay")](https://github.com/MelbourneDeveloper)
-[![Clarius Org](https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/clarius.png "Clarius Org")](https://github.com/clarius)
-[![MFB Technologies, Inc.](https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/MFB-Technologies-Inc.png "MFB Technologies, Inc.")](https://github.com/MFB-Technologies-Inc)
-
-
-<!-- sponsors.md -->
-
-[![Sponsor this project](https://raw.githubusercontent.com/devlooped/sponsors/main/sponsor.png "Sponsor this project")](https://github.com/sponsors/devlooped)
-&nbsp;
-
-[Learn more about GitHub Sponsors](https://github.com/sponsors)
-
-<!-- docs/footer.md -->
+<!-- include https://github.com/devlooped/sponsors/raw/main/footer.md -->
