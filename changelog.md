@@ -1,5 +1,20 @@
 # Changelog
 
+## [v1.0.2](https://github.com/devlooped/CloudStorageAccount/tree/v1.0.2) (2023-01-20)
+
+[Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v1.0.1...v1.0.2)
+
+:bug: Fixed bugs:
+
+- Add missing SAS credential support in Blob and Queue extension [\#45](https://github.com/devlooped/CloudStorageAccount/pull/45) (@kzu)
+
+:twisted_rightwards_arrows: Merged:
+
+- +M▼ includes [\#22](https://github.com/devlooped/CloudStorageAccount/pull/22) (@github-actions[bot])
+- Bump to latest packages [\#19](https://github.com/devlooped/CloudStorageAccount/pull/19) (@kzu)
+- +M▼ includes [\#18](https://github.com/devlooped/CloudStorageAccount/pull/18) (@github-actions[bot])
+- +M▼ includes [\#17](https://github.com/devlooped/CloudStorageAccount/pull/17) (@github-actions[bot])
+
 ## [v1.0.1](https://github.com/devlooped/CloudStorageAccount/tree/v1.0.1) (2022-04-26)
 
 [Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v1.0.0...v1.0.1)
