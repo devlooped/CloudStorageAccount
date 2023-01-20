@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using Azure;
 using Azure.Storage;
 using Azure.Storage.Blobs;
 
@@ -33,6 +34,8 @@ static partial class BlobAccountExtensions
                 new StorageSharedKeyCredential(account.Credentials.AccountName, account.Credentials.AccountKey));
         else if (account.Credentials.IsAnonymous)
             return new BlobServiceClient(account.BlobEndpoint);
+        else if (account.Credentials.IsSAS)
+            return new BlobServiceClient(account.BlobEndpoint, new AzureSasCredential(account.Credentials.Signature!));
 
         throw new InvalidOperationException("Account credentials are not supported for Blob client.");
     }
