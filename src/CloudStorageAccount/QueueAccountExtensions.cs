@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using Azure;
 using Azure.Storage;
 using Azure.Storage.Queues;
 
@@ -33,6 +34,8 @@ static partial class QueueAccountExtensions
                 new StorageSharedKeyCredential(account.Credentials.AccountName, account.Credentials.AccountKey));
         else if (account.Credentials.IsAnonymous)
             return new QueueServiceClient(account.QueueEndpoint);
+        else if (account.Credentials.IsSAS)
+            return new QueueServiceClient(account.QueueEndpoint, new AzureSasCredential(account.Credentials.Signature!));
 
         throw new InvalidOperationException("Account credentials are not supported for Queue client.");
     }
