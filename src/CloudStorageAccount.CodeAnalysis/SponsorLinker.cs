@@ -3,7 +3,7 @@ using Devlooped;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Diagnostics;
 
-namespace CloudStorageAccount.CodeAnalysis;
+namespace Devlooped.CloudStorageAccount;
 
 [DiagnosticAnalyzer(LanguageNames.CSharp, LanguageNames.VisualBasic, LanguageNames.FSharp)]
 class SponsorLinker : SponsorLink
