@@ -1,5 +1,18 @@
 # Changelog
 
+## [v1.1.0](https://github.com/devlooped/CloudStorageAccount/tree/v1.1.0) (2023-03-28)
+
+[Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v1.0.2...v1.1.0)
+
+:sparkles: Implemented enhancements:
+
+- Add SponsorLink to ensure ongoing development and support [\#60](https://github.com/devlooped/CloudStorageAccount/pull/60) (@kzu)
+- Switch to Polysharp and allow null strings in TryParse [\#59](https://github.com/devlooped/CloudStorageAccount/pull/59) (@kzu)
+
+:twisted_rightwards_arrows: Merged:
+
+- ⛙ ⬆️ Bump dependencies [\#58](https://github.com/devlooped/CloudStorageAccount/pull/58) (@github-actions[bot])
+
 ## [v1.0.2](https://github.com/devlooped/CloudStorageAccount/tree/v1.0.2) (2023-01-20)
 
 [Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v1.0.1...v1.0.2)
