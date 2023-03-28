@@ -23,6 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CloudStorageAccount.CodeAnalysis\CloudStorageAccount.CodeAnalysis.csproj" ReferenceOutputAssembly="false" OutputItemType="None" />
+  </ItemGroup>
+  
+  <ItemGroup>
     <Compile Include="..\CloudStorageAccount\**\*.cs" Exclude="..\CloudStorageAccount\Visibility.cs;..\CloudStorageAccount\obj\**\*.cs;" />
     <None Update="Devlooped.CloudStorageAccount.Source.targets" PackFolder="build" />
     <None Update="readme.md">
