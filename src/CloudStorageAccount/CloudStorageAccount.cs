@@ -354,7 +354,7 @@ partial class CloudStorageAccount
     /// <param name="account">A <see cref="CloudStorageAccount"/> object to hold the instance returned if
     /// the connection string can be parsed.</param>
     /// <returns><b>true</b> if the connection string was successfully parsed; otherwise, <b>false</b>.</returns>
-    public static bool TryParse(string connectionString, [NotNullWhen(true)] out CloudStorageAccount? account)
+    public static bool TryParse(string? connectionString, [NotNullWhen(true)] out CloudStorageAccount? account)
     {
         if (string.IsNullOrEmpty(connectionString))
         {
@@ -364,7 +364,7 @@ partial class CloudStorageAccount
 
         try
         {
-            return ParseImpl(connectionString, out account, err => { });
+            return ParseImpl(connectionString!, out account, err => { });
         }
         catch (Exception)
         {
