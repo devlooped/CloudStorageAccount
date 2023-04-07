@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <RootNamespace>Devlooped</RootNamespace>
@@ -16,7 +16,7 @@
     <PackageReference Include="Azure.Storage.Queues" Version="12.13.1" />
     <PackageReference Include="Azure.Data.Tables" Version="12.8.0" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="all" />
-    <PackageReference Include="PolySharp" Version="1.12.1" PrivateAssets="all" />
+    <PackageReference Include="PolySharp" Version="1.13.1" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
