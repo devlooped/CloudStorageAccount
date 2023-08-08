@@ -1,5 +1,9 @@
 # Changelog
 
+## [v1.1.2](https://github.com/devlooped/CloudStorageAccount/tree/v1.1.2) (2023-08-08)
+
+[Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v1.1.1...v1.1.2)
+
 ## [v1.1.1](https://github.com/devlooped/CloudStorageAccount/tree/v1.1.1) (2023-08-02)
 
 [Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v1.1.0...v1.1.1)
