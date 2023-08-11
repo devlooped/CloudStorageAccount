@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.2.0](https://github.com/devlooped/CloudStorageAccount/tree/v1.2.0) (2023-08-11)
+
+[Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v1.1.2...v1.2.0)
+
+:twisted_rightwards_arrows: Merged:
+
+- Remove current implementation of SponsorLink for now [\#86](https://github.com/devlooped/CloudStorageAccount/pull/86) (@kzu)
+
 ## [v1.1.2](https://github.com/devlooped/CloudStorageAccount/tree/v1.1.2) (2023-08-08)
 
 [Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v1.1.1...v1.1.2)
