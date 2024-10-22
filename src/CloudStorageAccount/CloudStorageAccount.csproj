@@ -1,12 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RootNamespace>Devlooped</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Devlooped.CloudStorageAccount</AssemblyName>
     <PackageId>Devlooped.CloudStorageAccount</PackageId>
-    <Description>CloudStorageAccount for Azure Storage v12+</Description>
-    <PackageProjectUrl>https://clarius.org/CloudStorageAccount</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!--<ProjectReference Include="..\CloudStorageAccount.CodeAnalysis\CloudStorageAccount.CodeAnalysis.csproj" ReferenceOutputAssembly="false" OutputItemType="None" />-->
+    <ProjectReference Include="..\CloudStorageAccount.Analyzers\CloudStorageAccount.Analyzers.csproj" ReferenceOutputAssembly="false" />
   </ItemGroup>
   
 </Project>

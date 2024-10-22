@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <Product>Devlooped.CloudStorageAccount</Product>
+    <Description>CloudStorageAccount for Azure Storage v12+</Description>
+    <PackageProjectUrl>https://clarius.org/CloudStorageAccount</PackageProjectUrl>
+
+    <RootNamespace>Devlooped</RootNamespace>
+    <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+  </PropertyGroup>
+</Project>
