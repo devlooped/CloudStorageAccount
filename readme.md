@@ -10,6 +10,7 @@ CloudStorageAccount for Azure Storage v12+.
 
 # Overview
 <!-- #Overview -->
+<!-- include https://github.com/devlooped/.github/raw/main/sponsorlink.md -->
 The new unified Azure Storage and Tables client libraries do away with the 
 [CloudStorageAccount](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.storage.cloudstorageaccount?view=azure-dotnet) 
 that was typically used. This makes migration a bit painful, as noted in:
