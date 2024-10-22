@@ -1,5 +1,19 @@
 # Changelog
 
+## [v1.3.0](https://github.com/devlooped/CloudStorageAccount/tree/v1.3.0) (2024-10-22)
+
+[Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v1.2.0...v1.3.0)
+
+:bug: Fixed bugs:
+
+- Skip code analysis for source-only package [\#121](https://github.com/devlooped/CloudStorageAccount/pull/121) (@kzu)
+
+:twisted_rightwards_arrows: Merged:
+
+- Add readme doc on SL v2 inclusion. [\#122](https://github.com/devlooped/CloudStorageAccount/pull/122) (@kzu)
+- Add SponsorLink v2 [\#120](https://github.com/devlooped/CloudStorageAccount/pull/120) (@kzu)
+- Remove old SL v1 code [\#114](https://github.com/devlooped/CloudStorageAccount/pull/114) (@kzu)
+
 ## [v1.2.0](https://github.com/devlooped/CloudStorageAccount/tree/v1.2.0) (2023-08-11)
 
 [Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v1.1.2...v1.2.0)
