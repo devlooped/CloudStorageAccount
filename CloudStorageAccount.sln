@@ -14,8 +14,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudStorageAccount.Source", "src\CloudStorageAccount.Source\CloudStorageAccount.Source.csproj", "{29911CE6-86EE-41F6-AB64-1C26DAEC2061}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudStorageAccount.CodeAnalysis", "src\CloudStorageAccount.CodeAnalysis\CloudStorageAccount.CodeAnalysis.csproj", "{FC2D64C0-A42C-4981-BE73-E08DD2030093}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,10 +32,6 @@ Global
 		{29911CE6-86EE-41F6-AB64-1C26DAEC2061}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29911CE6-86EE-41F6-AB64-1C26DAEC2061}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29911CE6-86EE-41F6-AB64-1C26DAEC2061}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FC2D64C0-A42C-4981-BE73-E08DD2030093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC2D64C0-A42C-4981-BE73-E08DD2030093}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC2D64C0-A42C-4981-BE73-E08DD2030093}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC2D64C0-A42C-4981-BE73-E08DD2030093}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
