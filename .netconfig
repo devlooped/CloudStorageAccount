@@ -73,9 +73,9 @@
 	weak
 [file ".gitignore"]
 	url = https://github.com/devlooped/oss/blob/main/.gitignore
-	sha = 02811fa23b0a102b9b33048335d41e515bf75737
+	sha = e0be248fff1d39133345283b8227372b36574b75
 
-	etag = a9c37ae312afac14b78436a7d018af4483d88736b5f780576f2c5a0b3f14998c
+	etag = c449ec6f76803e1891357ca2b8b4fcb5b2e5deeff8311622fd92ca9fbf1e6575
 	weak
 [file "Directory.Build.rsp"]
 	url = https://github.com/devlooped/oss/blob/main/Directory.Build.rsp
@@ -239,10 +239,10 @@
 	weak
 [file "src/SponsorLink/SponsorLink.Analyzer.targets"]
 	url = https://github.com/devlooped/SponsorLink/blob/main/samples/dotnet/SponsorLink.Analyzer.targets
-	sha = 1f083cf675260f176cc36c70220080a2e6211ddf
+	sha = b7450e6c80efbce65fa2956299f02781cd2dafbe
 
 
-	etag = 25b42de9005557475d1d21f28822d690727c2cc0cddc64fdd0d6c13da672cee8
+	etag = 6f31003e8910d535b2f3cbfcab195db7ced71346f818f45ecd23b5ee9b0dc725
 	weak
 [file "src/SponsorLink/SponsorLink/AnalyzerOptionsExtensions.cs"]
 	url = https://github.com/devlooped/SponsorLink/blob/main/samples/dotnet/SponsorLink/AnalyzerOptionsExtensions.cs
@@ -294,10 +294,10 @@
 	weak
 [file "src/SponsorLink/SponsorLink/SponsorLink.csproj"]
 	url = https://github.com/devlooped/SponsorLink/blob/main/samples/dotnet/SponsorLink/SponsorLink.csproj
-	sha = f74ea7a8c7f81c5bceefb3ed7ef4249b1d8574a3
+	sha = 0d22f1ee7d7afc93e11060887de0e1773884978e
 
 
-	etag = d87299dc7de83bd69c5b3232e8f58c8df66dc587c22c6f4539b8829d9d860c52
+	etag = dbf30ffb9baa63e45a4c821bc1433e4289b9af84855c2a306eaa116874a1c9f2
 	weak
 [file "src/SponsorLink/SponsorLink/SponsorLinkAnalyzer.cs"]
 	url = https://github.com/devlooped/SponsorLink/blob/main/samples/dotnet/SponsorLink/SponsorLinkAnalyzer.cs
@@ -397,10 +397,10 @@
 	weak
 [file "src/SponsorLink/Tests/Tests.csproj"]
 	url = https://github.com/devlooped/SponsorLink/blob/main/samples/dotnet/Tests/Tests.csproj
-	sha = b75813df2c8623fbf084e54617c1131dde31180c
+	sha = 0d22f1ee7d7afc93e11060887de0e1773884978e
 
 
-	etag = 145c7fb55216852edef0876fc52d0e706c79e3c1f2aab3782ef900d9c34884f8
+	etag = 5db4da024e4ecfb90be14feb4db952efa2109ee2ec84e715921291808d57b749
 	weak
 [file "src/SponsorLink/Tests/keys/kzu.key"]
 	url = https://github.com/devlooped/SponsorLink/blob/main/samples/dotnet/Tests/keys/kzu.key
