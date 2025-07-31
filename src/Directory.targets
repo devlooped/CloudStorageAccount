@@ -4,28 +4,18 @@
     <Description Condition="'$(IsPackable)' != 'false'">
       $(Description)
 
-      > This project uses SponsorLink and may issue IDE-only warnings if no active sponsorship is detected.
-      > Learn more at https://github.com/devlooped#sponsorlink.
+      &gt; This project uses SponsorLink and may issue IDE-only warnings if no active sponsorship is detected.
+      &gt; Learn more at https://github.com/devlooped#sponsorlink.
     </Description>
     <IsAnalyzer>$(PackFolder.StartsWith('analyzers/'))</IsAnalyzer>
   </PropertyGroup>
 
   <Target Name="PackCopyLocalLockFileAssemblies" Condition="'$(IsAnalyzer)' == 'true' and '$(MergeAnalyzerAssemblies)' != 'true'" BeforeTargets="GetPackageContents" DependsOnTargets="ReferenceCopyLocalPathsOutputGroup">
     <ItemGroup>
-      <ReferenceCopyLocalAssemblies Include="@(ReferenceCopyLocalPaths)" Condition="'%(Extension)' == '.dll' 
-        And !$([MSBuild]::ValueOrDefault('%(FileName)', '').EndsWith('.resources', StringComparison.OrdinalIgnoreCase))
-        And !$([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('ThisAssembly', StringComparison.OrdinalIgnoreCase))" />
-      <PackCopyLocalAssemblies Include="@(ReferenceCopyLocalAssemblies)" Condition="
-        !$([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('Microsoft.CodeAnalysis', StringComparison.OrdinalIgnoreCase)) And
-        !$([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('Microsoft.CSharp', StringComparison.OrdinalIgnoreCase)) And
-        !$([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('System.', StringComparison.OrdinalIgnoreCase))"
-      />
+      <ReferenceCopyLocalAssemblies Include="@(ReferenceCopyLocalPaths)" Condition="'%(Extension)' == '.dll'          And !$([MSBuild]::ValueOrDefault('%(FileName)', '').EndsWith('.resources', StringComparison.OrdinalIgnoreCase))         And !$([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('ThisAssembly', StringComparison.OrdinalIgnoreCase))" />
+      <PackCopyLocalAssemblies Include="@(ReferenceCopyLocalAssemblies)" Condition="         !$([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('Microsoft.CodeAnalysis', StringComparison.OrdinalIgnoreCase)) And         !$([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('Microsoft.CSharp', StringComparison.OrdinalIgnoreCase)) And         !$([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('System.', StringComparison.OrdinalIgnoreCase))" />
       <!-- Brings in System/Microsoft.IdentityModel, System.Text.Encodings.Web, System.Text.Json  -->
-      <PackCopyLocalAssemblies Include="@(ReferenceCopyLocalAssemblies)" Condition="
-        $([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('System.IdentityModel', StringComparison.OrdinalIgnoreCase)) Or
-        $([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('Microsoft.IdentityModel', StringComparison.OrdinalIgnoreCase)) Or
-        $([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('System.Text', StringComparison.OrdinalIgnoreCase))"
-      />
+      <PackCopyLocalAssemblies Include="@(ReferenceCopyLocalAssemblies)" Condition="         $([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('System.IdentityModel', StringComparison.OrdinalIgnoreCase)) Or         $([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('Microsoft.IdentityModel', StringComparison.OrdinalIgnoreCase)) Or         $([MSBuild]::ValueOrDefault('%(FileName)', '').StartsWith('System.Text', StringComparison.OrdinalIgnoreCase))" />
       <PackageFile Include="@(PackCopyLocalAssemblies)" PackFolder="$(PackFolder)" />
     </ItemGroup>
   </Target>
@@ -42,7 +32,7 @@
     </ParameterGroup>
     <Task>
       <Using Namespace="System" />
-      <Using Namespace="Microsoft.Build.Framework"/>
+      <Using Namespace="Microsoft.Build.Framework" />
       <Code Type="Fragment" Language="cs">
         <![CDATA[
         var version = this.BuildEngine4.GetRegisteredTaskObject("Version", RegisteredTaskObjectLifetime.Build);
