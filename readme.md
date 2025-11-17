@@ -2,19 +2,16 @@
 ============
 
 [![Version](https://img.shields.io/nuget/v/Devlooped.CloudStorageAccount.svg?color=royalblue)](https://www.nuget.org/packages/Devlooped.CloudStorageAccount) 
-[![Downloads](https://img.shields.io/nuget/dt/Devlooped.CloudStorageAccount.svg?color=green)](https://www.nuget.org/packages/Devlooped.CloudStorageAccount) 
-[![License](https://img.shields.io/github/license/devlooped/CloudStorageAccount.svg?color=blue)](https://github.com/devlooped/CloudStorageAccount/blob/main/license.txt) 
-[![Build](https://github.com/devlooped/CloudStorageAccount/workflows/build/badge.svg?branch=main)](https://github.com/devlooped/CloudStorageAccount/actions)
+[![Downloads](https://img.shields.io/nuget/dt/Devlooped.CloudStorageAccount.svg?color=darkmagenta)](https://www.nuget.org/packages/Devlooped.CloudStorageAccount) 
+[![EULA](https://img.shields.io/badge/EULA-OSMF-blue?labelColor=black&color=C9FF30)](osmfeula.txt)
+[![OSS](https://img.shields.io/github/license/devlooped/oss.svg?color=blue)](license.txt) 
 
 CloudStorageAccount for Azure Storage v12+.
 
+<!-- include https://github.com/devlooped/.github/raw/main/osmf.md -->
+
 # Overview
 <!-- #Overview -->
-<!-- include https://github.com/devlooped/.github/raw/main/sponsorlink.md -->
-*This project uses [SponsorLink](https://github.com/devlooped#sponsorlink) 
-and may issue IDE-only warnings if no active sponsorship is detected.*
-
-<!-- https://github.com/devlooped/.github/raw/main/sponsorlink.md -->
 The new unified Azure Storage and Tables client libraries do away with the 
 [CloudStorageAccount](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.storage.cloudstorageaccount?view=azure-dotnet) 
 that was typically used. This makes migration a bit painful, as noted in:
