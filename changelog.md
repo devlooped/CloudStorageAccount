@@ -1,5 +1,20 @@
 # Changelog
 
+## [v1.4.0](https://github.com/devlooped/CloudStorageAccount/tree/v1.4.0) (2025-11-17)
+
+[Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v1.3.0...v1.4.0)
+
+:hammer: Other:
+
+- 💟 Adopting SponsorLink in v1.3.0+ [\#119](https://github.com/devlooped/CloudStorageAccount/issues/119)
+
+:twisted_rightwards_arrows: Merged:
+
+- Fix warnings in source-version of the project [\#242](https://github.com/devlooped/CloudStorageAccount/pull/242) (@kzu)
+- Drop SponsorLink, adopt OSMF [\#240](https://github.com/devlooped/CloudStorageAccount/pull/240) (@kzu)
+- Upgrade to SLNX format [\#238](https://github.com/devlooped/CloudStorageAccount/pull/238) (@kzu)
+- Bump tests to NET10 LTS [\#237](https://github.com/devlooped/CloudStorageAccount/pull/237) (@kzu)
+
 ## [v1.3.0](https://github.com/devlooped/CloudStorageAccount/tree/v1.3.0) (2024-10-22)
 
 [Full Changelog](https://github.com/devlooped/CloudStorageAccount/compare/v1.2.0...v1.3.0)
