@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="src/CloudStorageAccount.Analyzers/CloudStorageAccount.Analyzers.csproj" />
+  <Project Path="src/CloudStorageAccount.Source/CloudStorageAccount.Source.csproj" />
+  <Project Path="src/CloudStorageAccount/CloudStorageAccount.csproj" />
+  <Project Path="src/CloudStorageAccountTests/CloudStorageAccountTests.csproj" />
+</Solution>
