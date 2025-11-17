@@ -18,9 +18,5 @@
   <ItemGroup>
     <InternalsVisibleTo Include="CloudStorageAccountTests" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\CloudStorageAccount.Analyzers\CloudStorageAccount.Analyzers.csproj" ReferenceOutputAssembly="false" />
-  </ItemGroup>
   
 </Project>

@@ -16,10 +16,6 @@
     <PackageReference Include="Azure.Data.Tables" Version="12.9.1" />
     <PackageReference Include="PolySharp" Version="1.15.0" PrivateAssets="all" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\CloudStorageAccount.Analyzers\CloudStorageAccount.Analyzers.csproj" ReferenceOutputAssembly="false" />
-  </ItemGroup>
   
   <ItemGroup>
     <Compile Include="..\CloudStorageAccount\**\*.cs" Exclude="..\CloudStorageAccount\Visibility.cs;..\CloudStorageAccount\obj\**\*.cs;" />
